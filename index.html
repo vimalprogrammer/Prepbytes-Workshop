@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<style>
+        p{
+            color: #464660;
+        }
+    </style>-->
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1 style="color: #368B85;background-color:#B4B897">Backtracking</h1>
+    <button>change_color</button>
+    <p>Copyright ©2002 by David Matuszek</p>
+    <p>Backtracking is a form of recursion.</p>
+    <p>The usual scenario is that you are faced with a number of options, and you must choose one of these. After you make your choice you will get a new set of options; just what set of options you get depends on what choice you made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of choices, your final state is a goal state; if you didn't, it isn't.</p>
+    <p>Conceptually, you start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
+    <center><img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif"/></center>
+    <ul>
+        <li>Starting at Root, your options are A and B.</li>
+        <li>You choose A. At A, your options are C and D.</li>
+        <li>
+          You choose C. C is bad. Go back to A. At A, you have already tried C, and it
+          failed. Try D.
+        </li>
+      </ul>
+      <ol>
+        <li>Starting at Root, your options are A and B.</li>
+        <li>You choose A. At A, your options are C and D.</li>
+        <li>
+          You choose C. C is bad. Go back to A. At A, you have already tried C, and it
+          failed. Try D.
+        </li>
+      </ol>
+      
+      <script src="index.js"></script>
+</body>
+</html>
